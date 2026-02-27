@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+body {
+margin:0;
+font-family:'Orbitron', sans-serif;
+background:linear-gradient(135deg,#000000,#2b0000);
+color:white;
+text-align:center;
+}
+
+header {
+padding:30px;
+background:#000;
+border-bottom:4px solid red;
+}
+
+.card {
+background:#111;
+margin:20px auto;
+padding:20px;
+width:400px;
+border:2px solid red;
+box-shadow:0 0 15px red;
+}
+
+button {
+background:red;
+color:white;
+border:none;
+padding:10px 15px;
+margin:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+input, select {
+padding:8px;
+margin:8px;
+border:none;
+}
+
+ul { list-style:none; padding:0; }
+li { padding:5px; border-bottom:1px solid #333; }

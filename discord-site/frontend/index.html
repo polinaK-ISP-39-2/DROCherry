@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Danganronpa Online</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<header>
+<h1>Danganronpa Online</h1>
+<p>Запись на убийственную игру</p>
+</header>
+
+<section class="card">
+<button onclick="login()">Войти через Discord</button>
+
+<form id="joinForm" style="display:none;">
+<input type="text" id="nickname" placeholder="Игровой ник" required>
+<select id="rolePref">
+<option value="random">Случайная роль</option>
+<option value="student">Студент</option>
+<option value="traitor">Предатель</option>
+</select>
+<button type="submit">Записаться</button>
+</form>
+</section>
+
+<section class="card">
+<h2>Участники</h2>
+<ul id="players"></ul>
+</section>
+
+<section class="card admin">
+<h2>Админ панель</h2>
+<input type="password" id="adminPass" placeholder="Пароль">
+<button onclick="loadAdmin()">Войти</button>
+<div id="adminPanel" style="display:none;">
+<button onclick="resetGame()">Сбросить игру</button>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
